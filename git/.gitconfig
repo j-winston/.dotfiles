@@ -1,0 +1,19 @@
+[user]
+	name = j-winston
+	email = kenjameswinston@gmail.com
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[core]
+	editor = vim
+[alias]
+	unstage = restore --staged
+	cm = commit -m
+	lg = log --oneline
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
