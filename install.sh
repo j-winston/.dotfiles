@@ -10,6 +10,7 @@ curl -L https://nixos.org/nix/install --no-daemon | sh
     nixpkgs.zsh \                                                                   
     nixpkgs.git \                                                                   
     nixpkgs.google-chrome \                                                         
+    nixpkgs.nitrogen \
     nixpkgs.i3 \                                                                    
     nixpkgs.polybar \                                                               
     nixpkgs.gh \                                                                    
