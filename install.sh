@@ -16,7 +16,8 @@ curl -L https://nixos.org/nix/install --no-daemon | sh
     nixpkgs.bat \
     nixpkgs.powerline-fonts \
     nixpkgs.stow \
-    nixpkgs.nerdfonts
+    nixpkgs.nerdfonts \
+    nixpkgs.trash-cli
 
 # stow packages
 stow git 
