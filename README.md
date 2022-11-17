@@ -4,4 +4,5 @@
 2. Run 'install.sh'
 3. Open new window to initiate 'zsh' shell
 
-
+## Current Issues 
+None at this time
