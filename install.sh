@@ -8,7 +8,6 @@ curl -L https://nixos.org/nix/install --no-daemon | sh
   nix-env -iA \                                                                       
     nixpkgs.neovim \                                                                
     nixpkgs.zsh \                                                                   
-    nixpkgs.git \                                                                   
     nixpkgs.google-chrome \                                                         
     nixpkgs.nitrogen \
     nixpkgs.i3 \                                                                    
