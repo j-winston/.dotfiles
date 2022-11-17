@@ -19,6 +19,10 @@ alias 'l'='ls '
 alias 'ls'='ls -a --color'
 alias 'cat'='batcat'
 alias 'rm'='trash'
+alias 'h'='cd'
+alias 'c'='clear'
+alias 'u'='cd ..'
+alias 'b'='cd -'
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
