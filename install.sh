@@ -30,13 +30,14 @@ stow i3
 # add zsh to valid login shells 
 command -v zsh | sudo tee -a /etc/shells 
 
-#use zsh as default shell 
+# use zsh as default shell 
 sudo chsh -s $(which zsh) $USER 
 
 # install antidote
 git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-~}/.antidote
 
-
+# packer install
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 
 
