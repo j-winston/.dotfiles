@@ -12,11 +12,14 @@ SAVEHIST=1000
 setopt autocd extendedglob nomatch
 unsetopt notify
 bindkey -v
+
 # Aliases
 alias 'v'='nvim'
 alias 'l'='ls '
 alias 'ls'='ls -a --color'
 alias 'cat'='batcat'
+alias 'rm'='trash'
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/james/.zshrc'
