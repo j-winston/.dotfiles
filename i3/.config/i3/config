@@ -184,7 +184,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 # class                 border  backgr. text    indicator child_border
-client.focused          #ff781f #285577 #ffffff #ff781f  #ff781f
+client.focused          #1793d1 #285577 #ffffff #1793d1   #1793d1
 client.focused_inactive #000000 #000000 #000000 #000000   #000000
 client.unfocused        #000000 #000000 #000000 #000000   #000000
 client.urgent           #2f343a #900000 #ffffff #900000   #900000

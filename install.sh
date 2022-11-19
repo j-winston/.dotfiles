@@ -1,37 +1,30 @@
-# install nix
-curl -L https://nixos.org/nix/install --no-daemon | sh
+#!/bin/bash
+# install packages
 
-# source nix
-~/.nix-profile/etc/profile.d/nix.sh
-
-# install packages 
-  nix-env -iA \                                                                       
-    nixpkgs.neovim \                                                                
-    nixpkgs.zsh \                                                                   
-    nixpkgs.google-chrome \                                                         
-    nixpkgs.nitrogen \
-    nixpkgs.i3 \                                                                    
-    nixpkgs.polybar \                                                               
-    nixpkgs.gh \                                                                    
-    nixpkgs.bat \
-    nixpkgs.powerline-fonts \
-    nixpkgs.stow \
-    nixpkgs.nerdfonts \
-    nixpkgs.trash-cli
+sudo pacman -S neovim\
+	git\
+	zsh\
+	nitrogen\
+	i3\
+	polybar\
+	github-cli\
+	bat\
+	powerline-fonts\
+	stow\
+	nerdfonts\
+	trash-cli
 
 # stow packages
-stow git 
+stow git
 stow zsh
 stow nvim
-stow polybar 
-stow nitrogen 
+stow polybar
+stow nitrogen
 stow i3
 
-# add zsh to valid login shells 
-command -v zsh | sudo tee -a /etc/shells 
 
-# use zsh as default shell 
-sudo chsh -s $(which zsh) $USER 
+# use zsh as default shell
+chsh -s $(which zsh) $USER
 
 # install antidote
 git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-~}/.antidote
