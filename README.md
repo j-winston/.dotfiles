@@ -1,8 +1,9 @@
 #.dotfiles
 
-1. Clone this repository
-2. Run 'install.sh'
-3. Open new window to initiate 'zsh' shell
+## Nvim, Polybar, Zsh 
+Nvim--Plugins and aesthetic tweaks
+Polybar--Modules, Colors etc.
+Zsh--Theme, Powerlevel10k
 
 ## Current Issues 
-None at this time
+Some 'handplaning' will be required to smooth out things depending on installation.
