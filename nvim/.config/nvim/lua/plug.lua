@@ -1,4 +1,5 @@
 -- [[ Useins Go Here ]]
+--
   -- Bootstrapping for packer 
 local ensure_packer = function()
   local fn = vim.fn
@@ -40,7 +41,8 @@ return require('packer').startup(function(use)
     use { 'hrsh7th/cmp-buffer' }
     use { 'hrsh7th/nvim-cmp' }
     use { 'hrsh7th/cmp-vsnip' }
-    use { 'hrsh7th/vim-vsnip' }
+--    use { 'hrsh7th/vim-vsnip' }
+    use { 'L3MON4D3/LuaSnip' }
     use {
         "windwp/nvim-autopairs",
         config = function() require("nvim-autopairs").setup {} end

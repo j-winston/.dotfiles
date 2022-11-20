@@ -28,7 +28,7 @@ end
 
 
 local nvim_lsp = require('lspconfig')
-local servers = { 'pyright', 'emmet_ls', 'tsserver' }
+local servers = { 'pyright', 'emmet_ls', 'tsserver', 'cssls' }
 
     for _, lsp in ipairs(servers) do
         nvim_lsp[lsp].setup {
