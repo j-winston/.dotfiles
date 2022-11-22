@@ -24,6 +24,9 @@ alias 'c'='clear'
 alias 'u'='cd ..'
 alias 'b'='cd -'
 
+# Set default editor 
+export VISUAL="nvim"
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/james/.zshrc'
