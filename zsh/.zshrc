@@ -17,7 +17,7 @@ bindkey -v
 alias 'v'='nvim'
 alias 'l'='ls -al'
 alias 'ls'='ls -a --color'
-alias 'cat'='batcat'
+alias 'cat'='cat'
 alias 'rm'='trash'
 alias 'h'='cd'
 alias 'c'='clear'
