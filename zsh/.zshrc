@@ -15,14 +15,17 @@ bindkey -v
 
 # Aliases
 alias 'v'='nvim'
-alias 'l'='ls -al'
+alias 'l'='ls -ahl'
 alias 'ls'='ls -a --color'
-alias 'cat'='cat'
+alias 'cat'='bat'
 alias 'rm'='trash'
 alias 'h'='cd'
 alias 'c'='clear'
 alias 'u'='cd ..'
 alias 'b'='cd -'
+
+# New command
+mkdircd(){ mkdir "$1" && cd "$1"  }
 
 # Set default editor 
 export VISUAL="nvim"
