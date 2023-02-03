@@ -62,7 +62,6 @@ return require('packer').startup(function(use)
     }
     use { 'onsails/lspkind.nvim'}
     use { 'tpope/vim-fugitive' }
-    use { 'dense-analysis/ale' }
 
       if packer_bootstrap then
         require('packer').sync()
