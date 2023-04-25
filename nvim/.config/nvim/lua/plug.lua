@@ -12,7 +12,10 @@ local ensure_packer = function()
   return false
 end
 
+
 local packer_bootstrap = ensure_packer()
+
+
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
@@ -21,7 +24,8 @@ return require('packer').startup(function(use)
       -- [[ Theme ]]
     use { 'mhinz/vim-startify'}
     use { 'DanilaMihailov/beacon.nvim'}
-    use { 'navarasu/onedark.nvim' } 
+   use { 'navarasu/onedark.nvim' } 
+    
 
     -- [[ Dev ]]
     use { 'nvim-lua/plenary.nvim' }
@@ -58,12 +62,12 @@ return require('packer').startup(function(use)
     -- [[ Snippets ]]
     use {
       'nvim-lualine/lualine.nvim',
-      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
+
     use { 'onsails/lspkind.nvim'}
     use { 'tpope/vim-fugitive' }
-
-    --[[Surround]]
+-- [    --[[Surround]]
 
     use({
     "kylechui/nvim-surround",
@@ -75,10 +79,15 @@ return require('packer').startup(function(use)
     end
 
 })
+
+
       if packer_bootstrap then
         require('packer').sync()
       end
 end)
+
+
+
 
 
 

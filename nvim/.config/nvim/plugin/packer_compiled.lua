@@ -181,6 +181,11 @@ _G.packer_plugins = {
     path = "/home/james/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["solarized.nvim"] = {
+    loaded = true,
+    path = "/home/james/.local/share/nvim/site/pack/packer/start/solarized.nvim",
+    url = "https://github.com/shaunsingh/solarized.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/james/.local/share/nvim/site/pack/packer/start/telescope.nvim",
