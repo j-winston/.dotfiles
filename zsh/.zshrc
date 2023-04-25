@@ -49,7 +49,8 @@ zstyle ':completion:*' menu select
 # Nix 
 if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi 
 
-
 # Antidote
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load 
+
+export PATH=~/minecraft-launcher/src/minecraft-launcher:$PATH

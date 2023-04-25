@@ -23,9 +23,18 @@ require('whichkey-config')
 require('cmp-config')
 
  -- PLUGINS
+require('onedark').setup {
+    style = 'warm'
+}
 require('onedark').load()
+
+require('onedark').setup {
+    style = 'warm'
+}
 require('mason').setup()
 require('mason-lspconfig').setup()
 require('nvim-tree').setup()
 require('which-key').setup()
 require('lualine').setup() 
+
+
