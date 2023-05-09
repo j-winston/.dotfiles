@@ -1,9 +1,14 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+
+# OK to perform console I/O before this point.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+# From this point on, until zsh is fully initialized, console input won't work and
+# console output may appear uncolored.
+
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -37,14 +42,15 @@ zstyle :compinstall filename '/home/james/.zshrc'
 autoload -Uz compinit
 compinit
 
-# End of lines added by compinstall
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Zsh-Z
 zstyle ':completion:*' menu select 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Shut up
+POWERLEVEL9K_INSTANT_PROMPT=off 
 
 # Nix 
 if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi 
