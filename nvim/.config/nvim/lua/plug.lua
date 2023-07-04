@@ -65,6 +65,13 @@ return require('packer').startup(function(use)
       requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
 
+-- [[[Tree sitter]]]
+
+
+use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+}
     use { 'onsails/lspkind.nvim'}
     use { 'tpope/vim-fugitive' }
 -- [    --[[Surround]]
