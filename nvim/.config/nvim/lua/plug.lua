@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
 
     -- [[ Dev ]]
     use { 'nvim-lua/plenary.nvim' }
+    use { 'walm/jshint.vim'}
     use {
         'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
@@ -70,9 +71,7 @@ return require('packer').startup(function(use)
 
 use {
     'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
-}
-    use { 'onsails/lspkind.nvim'}
+} use { 'onsails/lspkind.nvim'}
     use { 'tpope/vim-fugitive' }
 -- [    --[[Surround]]
 

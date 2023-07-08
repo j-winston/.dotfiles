@@ -6,7 +6,10 @@ local mappings = {
     x = { ":bdelete<cr>", "Close" },
     f = { ":Telescope find_files<cr>", "Telescope Find Files" },
     r = { ":Telescope live_grep<cr>", "Telescope Live Grep" },
+            s = {":JSHint .<cr>", "Run JSHint"},
+            t = {":!prettier -w .<cr>", "Prettier"},
     fq = { ":q!<cr>", "Force Quit" },
+
         l = {
             name = "LSP",
             i = {":LspInfo<cr>", "Connected Language Servers"},
@@ -17,7 +20,7 @@ local mappings = {
             r = {'<cmd>lua vim.lsp.buf.rename()<CR>', "Rename"}, 
             a = {'<cmd>lua vim.lsp.buf.code_action()<CR>', "Code actions"},
             e = {'<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', "Show line diagnostics"},
-            q = {'<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', "Show loclist"}
+            q = {'<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', "Show loclist"}, 
         },
 
 }

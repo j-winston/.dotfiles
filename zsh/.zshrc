@@ -22,12 +22,14 @@ bindkey -v
 alias 'v'='nvim'
 alias 'l'='ls -ahl'
 alias 'ls'='ls -a --color'
+alias 'd'='ls -dl */'
 alias 'cat'='bat'
 alias 'rm'='trash'
 alias 'h'='cd'
 alias 'c'='clear'
 alias 'u'='cd ..'
 alias 'b'='cd -'
+alias 'temp'='liquidctl --vendor 0x1e71 status'
 
 # New command
 mkdircd(){ mkdir "$1" && cd "$1"  }
