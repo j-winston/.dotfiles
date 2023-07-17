@@ -1,12 +1,10 @@
 #!/bin/bash
 # install packages
 
-sudo pacman -S neovim\
+sudo apt install -S neovim\
 	git\
 	zsh\
 	nitrogen\
-	i3\
-	polybar\
 	github-cli\
 	bat\
 	powerline-fonts\
@@ -18,9 +16,7 @@ sudo pacman -S neovim\
 stow git
 stow zsh
 stow nvim
-stow polybar
 stow nitrogen
-stow i3
 
 
 # use zsh as default shell
